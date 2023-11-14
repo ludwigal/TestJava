@@ -1,0 +1,21 @@
+package Controller;
+
+import Model.FlashcardDeck;
+import Model.MvcModel;
+
+public class DeckController {
+
+    private FlashcardDeck model;
+
+    public DeckController(FlashcardDeck model) {
+        this.model = model;
+
+    }
+
+    public void previousClicked(){
+        model.previousClicked();
+    }
+    public void nextClicked(){
+        model.nextClicked();
+    }
+}
